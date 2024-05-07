@@ -1,0 +1,164 @@
+.navbar {
+  background-color: #fe563b;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+header {
+  background-color: #fe563b;
+  height: 35rem;
+}
+.header-container h1 {
+  position: absolute;
+  top: 15rem;
+}
+.banner-image {
+  width: 100%; /* Örneğin, genişliği ekranın tamamına sığacak şekilde ayarlayın */
+  height: auto; /* Yükseklik otomatik olarak ayarlanacaktır, orantı korunur */
+}
+
+@media (min-width: 1024px) {
+  .banner-image {
+    padding-top: 3rem;
+    margin-left: 40rem;
+  }
+}
+@media (max-width: 1024px) {
+  .header-container h1 {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .banner-image {
+    display: none;
+  }
+}
+
+.about-bowl {
+  margin-right: 12rem;
+  height: 30rem;
+  transition: transform 0.2s;
+}
+.about-bowl:hover {
+  transform: scale(1.1);
+}
+.about-text {
+  width: 30rem;
+  padding-right: 5rem;
+  font-size: medium;
+}
+
+@media (min-width: 1024px) {
+  .about-bowl {
+    margin-right: 3rem;
+    height: 40rem;
+  }
+  .about-text {
+    width: 40rem;
+    position: absolute;
+    left: 50%;
+    top: 49rem;
+  }
+}
+.card {
+  margin-top: 2rem;
+  background-color: #fe563b;
+}
+.card-img-top {
+  width: 100%;
+  height: 50vh;
+  transition: transform 0.2s;
+}
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
+.custom-card {
+  border: none !important;
+  box-shadow: none !important;
+}
+.card-body {
+  text-align: center;
+  color: #fff;
+}
+.bowl-menu {
+  height: 35rem;
+}
+.bowl-menu h1 {
+  padding-top: 1rem;
+  text-align: center;
+  color: #fe563b;
+}
+@media (min-width: 1024px) {
+  .bowl-menu {
+    height: 40rem;
+    background-color: #fe563b;
+  }
+  .bowl-menu h1 {
+    padding-top: 2rem;
+    text-align: center;
+    color: #fff;
+  }
+}
+.customer-container {
+  margin-top: 70rem;
+  margin-left: -7rem;
+  margin-right: 0;
+  position: relative;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .customer-container h1 {
+    font-size: 30px;
+  }
+  .customer-container {
+    margin-top: 40rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 0;
+    position: relative;
+    font-size: 15px;
+    width: 800px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .customer-container {
+    margin: 10rem;
+    margin-left: 12rem;
+    margin-right: 0;
+    position: relative;
+  }
+  .customer-text {
+    position: absolute;
+    top: 5rem;
+    left: 19rem;
+    font-size: 17px;
+    width: 700px !important;
+  }
+  .customer-img {
+    width: 10rem !important;
+    margin-left: 5rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+.customer-text {
+  position: absolute;
+  top: 5rem;
+  left: 19rem;
+  width: 400px;
+}
+.customer-img {
+  width: 6rem;
+  margin-left: 8rem;
+  margin-bottom: 7rem;
+}
+
+footer {
+  background-color: #fe563b;
+}
+.email {
+  width: 15rem;
+}
